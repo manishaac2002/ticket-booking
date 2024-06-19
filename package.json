@@ -7,7 +7,7 @@
     "build": "concurrently  \"rimraf dist\" && \"npx tsc\"",
     "preStart": "npm run build",
     "start": "node dist/app.js",
-    "preServe":"npm run build",
+    "preServe": "npm run build",
     "serve": "concurrently \"npx tsc -w\" \"nodemon dist/app.js\""
   },
   "author": "",
@@ -20,7 +20,9 @@
   "dependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mongoose": "^8.4.3",
     "rimraf": "^5.0.7"
   }
 }

@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
       "target": "es6",
-      "module": "commonjs",
+      "module": "es6",
       "esModuleInterop": true,
       "strict": true,
       "moduleResolution": "node",
       "outDir": "./dist",
       "baseUrl": "./src",
-      "forceConsistentCasingInFileNames": true
+      "forceConsistentCasingInFileNames": true,
+      "allowImportingTsExtensions": true,
+      "noEmit": true
   }
 }
