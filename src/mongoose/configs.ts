@@ -5,7 +5,7 @@ import mongoose from "mongoose"
 /**
  * Asynchronously connects to the Mongoose database based on the provided usage flag.
  *
- * @param {boolean} usage - A flag indicating whether to connect to the database.
+ * @param {boolean} connection - A flag indicating whether to connect to the database.
  * @return {Promise<void>} A promise that resolves once the connection process is completed.
  */
 export const connectToMongoose = async (connection: boolean): Promise<void> => {
