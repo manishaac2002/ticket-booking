@@ -2,16 +2,10 @@ import { mongooseConfig } from "config/config.ts";
 import mongoose from "mongoose"
 
 
-/**
- * Asynchronously connects to the Mongoose database based on the provided usage flag.
- *
- * @param {boolean} connection - A flag indicating whether to connect to the database.
- * @return {Promise<void>} A promise that resolves once the connection process is completed.
- */
 export const connectToMongoose = async (connection: boolean): Promise<void> => {
   try {
     if (connection) {
-      await mongoose.connect(mongooseConfig.URL); // Add await for proper handling of the asynchronous connect method
+      await mongoose.connect(mongooseConfig.URL)
       console.log("🟢 Connected to database!");
     } else {
       console.log("🟡 Working with no database!");
